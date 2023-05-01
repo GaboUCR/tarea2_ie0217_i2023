@@ -24,9 +24,9 @@ OTROS ACUERDOS EN EL SOFTWARE.
 */
 
 #include <iostream>
-#include <vector>
+#include <vector> 
 #include <algorithm>
-#include <stdexcept>
+// #include <stdexcept>
 #include <functional>
 
 template<typename T>
