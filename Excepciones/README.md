@@ -1,10 +1,18 @@
-## Include innecesarios en Stacktemplate.cpp
+## Documentación
 
-No se necesita incluir la biblioteca <exceptions> porque la clase Stack utiliza la excepción std::out_of_range de la biblioteca estándar para manejar el caso en el que se intente eliminar un elemento de un stack vacío.
+Este código define una excepción personalizada llamada MyException que hereda de la clase base std::exception. Esta excepción se puede utilizar en programas en C++ para manejar errores específicos del usuario o para personalizar los mensajes de error.
 
-La excepción std::out_of_range es parte de la biblioteca estándar de C++ y se utiliza para representar errores cuando se accede a elementos fuera del rango válido. Esta excepción se utiliza comúnmente cuando se accede a elementos de un contenedor fuera de su rango válido. En este caso, se usa para manejar la situación en la que se intenta eliminar un elemento de un stack vacío.
+El código está dividido en dos archivos:
 
-Dado que la clase Stack utiliza la excepción std::out_of_range de la biblioteca estándar para manejar excepciones, no es necesario incluir la biblioteca <exceptions> explícitamente.
+### Exceptions.hpp
+Este archivo de encabezado define la clase MyException, que hereda de la clase std::exception. Se declara el método what() que sobrescribe el método what() de la clase base std::exception. El método what() devuelve una cadena de caracteres constante que contiene el mensaje de la excepción personalizada.
+
+### Exceptions.cpp
+Este archivo contiene la implementación del método what() de la clase MyException. El método what() devuelve una cadena de caracteres constante que contiene el mensaje de la excepción personalizada. En este caso, el mensaje es "My custom exception".
+
+### Uso de la clase MyException
+
+Para utilizar la excepción personalizada en un programa en C++, incluya el archivo de encabezado exceptions.hpp y lance la excepción utilizando la instrucción throw. Cuando se lanza la excepción MyException, el programa imprimirá el mensaje de error personalizado: "My custom exception".
   
  ## Como ejecutar el programa
 
