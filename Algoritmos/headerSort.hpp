@@ -23,15 +23,43 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
-#ifndef HEADER_SORT_HPP
-#def HEADER_SORT_HPP
+/**
+ * @file header_sort.hpp
+ * @brief Este archivo contiene las declaraciones de las funciones de ordenamiento.
+ * @author Tarea 2 - Grupo 2 - IE 0217 - I Ciclo 2023
+ * @date 2023-04-30
+ */
 
+#ifndef HEADER_SORT_HPP
+#define HEADER_SORT_HPP
+
+/**
+ * @brief Realiza el ordenamiento de un array utilizando el algoritmo Bubble Sort.
+ * @param arr[] Array de enteros que se desea ordenar.
+ * @param n Tamaño del array.
+ */
 void bubbleSort(int arr[], int n);
 
+/**
+ * @brief Realiza el ordenamiento de un array utilizando el algoritmo Selection Sort.
+ * @param arr[] Array de enteros que se desea ordenar.
+ * @param n Tamaño del array.
+ */
 void selectionSort(int arr[], int n);
 
+/**
+ * @brief Realiza el ordenamiento de un array utilizando el algoritmo Insertion Sort.
+ * @param arr[] Array de enteros que se desea ordenar.
+ * @param n Tamaño del array.
+ */
 void insertionSort(int arr[], int n);
 
+/**
+ * @brief Realiza el ordenamiento de un array utilizando el algoritmo Quick Sort.
+ * @param arr[] Array de enteros que se desea ordenar.
+ * @param low Índice inferior del subarray a ordenar.
+ * @param high Índice superior del subarray a ordenar.
+ */
 void quickSort(int arr[], int low, int high);
 
 #endif /* HEADER_SORT_HPP */

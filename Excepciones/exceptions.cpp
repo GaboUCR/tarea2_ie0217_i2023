@@ -24,21 +24,10 @@ OTROS ACUERDOS EN EL SOFTWARE.
 */
 
 #include <iostream>
+#include "exceptions.hpp"
 
-class MyException : public std::exception {
-public:
-  const char* what() const throw() {
+// Implementación del método what() que devuelve una cadena de caracteres constante
+const char* MyException::what() const throw() {
+    // Retorna un mensaje personalizado para la excepción
     return "My custom exception";
-  }
-};
-
-int main() {
-
-  try {
-    throw MyException();
-  } catch (std::exception& e) {
-    std::cout << "Error: " << e.what() << std::endl;
-  }
-
-  return 0;
 }
