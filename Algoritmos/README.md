@@ -49,3 +49,15 @@ En el mejor caso, si se elige un buen pivote, el array se divide en dos partes d
 - En el peor caso, si se elige el peor pivote (por ejemplo, el elemento más pequeño o el más grande) en cada iteración, el array no se divide de manera equilibrada, lo que resulta en una profundidad de recursión de O(n). Esto lleva a una complejidad en tiempo total de O(n^2).
 
 Para reducir la probabilidad del peor caso, se pueden utilizar técnicas como la elección del pivote aleatoriamente, lo que en la práctica hace que Quick Sort sea un algoritmo de ordenamiento eficiente y de uso común.
+
+## Como ejecutar el programa
+
+```console 
+g++ sort.cpp main.cpp -o program.exe
+```
+
+El comando anterior crea un ejecutable llamado program.exe.
+
+```console 
+./program.exe
+```
